@@ -7,4 +7,8 @@
 
 def handtodice(hand):
 	# your code goes here
-	pass
+	#converting the number to string and setting it 
+	# as a list
+	x = [int(a) for a in str(hand)]
+	#converting list to tuple
+	return tuple(x)
