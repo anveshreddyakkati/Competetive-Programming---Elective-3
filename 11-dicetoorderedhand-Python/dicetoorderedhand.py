@@ -12,11 +12,8 @@
 
 def dicetoorderedhand(a, b, c):
 	# your code goes here
-	#to get the max of three digits
-	ma=max(a,b,c)
-	#to get the minimum from three digits
-	mi=min(a,b,c)
-	#to get the remaining number other than max and min
-	medium=(a+b+c)-(ma+mi)
-	#adding them together
-	return (ma*100)+(medium*10)+mi
+	x = [a, b, c]
+	x.sort(reverse=True)
+	return int("".join([str(i) for i in x]))
+
+	
