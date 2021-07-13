@@ -32,7 +32,33 @@
 # Hint: Then, you may wish to use diceToOrderedHand(a, b, c) at the end to convert the 3 dice back
 # into a sorted hand.
 # Hint: Also, remember to use % to get the one's digit, and use //= to get rid of the one's digit.
+from collections import Counter
 
 def playstep2(hand, dice):
 	# your code goes here
-	pass
+	x = [int(a) for a in str(hand)]
+	a=list(set(x))
+	#case 1
+	if len(a)==3:
+		a.sort(reverse=True)
+		z=str(a[0])
+		y=str(dice%100)
+		e=str(z+y)
+		res = int(''.join(sorted(e, reverse = True)))
+		t=dice//100
+		c=(res,t)
+		return c
+	else:
+		t=[]
+		d=Counter(x)
+		for i in d:
+			if d[i]>1:
+				u=str(i)
+				g=str(u+u)
+				print("conter",g)
+				y=str(dice%10)
+				i=str(g+y)
+				res = int(''.join(sorted(i, reverse = True)))
+				t=dice//10
+				c=(res,t)
+				return c
