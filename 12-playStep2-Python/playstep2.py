@@ -38,7 +38,7 @@ def playstep2(hand, dice):
 	# your code goes here
 	x = [int(a) for a in str(hand)]
 	a=list(set(x))
-	#case 1
+	
 	if len(a)==3:
 		a.sort(reverse=True)
 		z=str(a[0])
@@ -49,7 +49,7 @@ def playstep2(hand, dice):
 		c=(res,t)
 		return c
 	else:
-		t=[]
+		
 		d=Counter(x)
 		for i in d:
 			if d[i]>1:
