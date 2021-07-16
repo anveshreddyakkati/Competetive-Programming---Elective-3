@@ -1,0 +1,116 @@
+{
+    "pythondictionaries.py": [
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:02:45",
+            "keyStrokeInfo": "\r\n",
+            "position": "43,58"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:02:45",
+            "keyStrokeInfo": "\r\n",
+            "position": "44,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:02:46",
+            "keyStrokeInfo": "\r\n",
+            "position": "45,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 3,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:02:47",
+            "keyStrokeInfo": "def sortUSA():    '''Return all the cities in the USA in alphabetical order'''    for i in locations:        if(i==\"North America\"):            x = dict(locations['North America'])            # print(\"x\", x)            for a in x:                if(a==\"USA\"):                    cities = x[\"USA\"]                    # print(\"cities\", cities)                    cities.sort()    return cities\r\ndef alphaAsia():    '''Return all the cities in Asia continent in alphabetical order'''    l=[]    for i in locations:        if(i==\"Asia\"):            x=dict(locations[\"Asia\"])            for a in x:                cities=x[a][0] + \" - \" + a                # print(\"cities\", cities)                l.append(cities)                l.sort()    return l\r\n# Note: Check for test cases to understand the output format.locations = {'North America': {'USA': ['Mountain View', 'Atlanta']}, 'Asia' : {'India' : ['Bangalore'], 'China' : ['Shanghai']}, 'Africa' : {'Egypt' : ['Cairo']}}",
+            "position": "46,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:02:58",
+            "keyStrokeInfo": "\r\n    ",
+            "position": "46,102"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:03:05",
+            "keyStrokeInfo": "",
+            "position": "47,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:03:05",
+            "keyStrokeInfo": "",
+            "position": "47,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:03:05",
+            "keyStrokeInfo": "",
+            "position": "47,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:03:06",
+            "keyStrokeInfo": "",
+            "position": "47,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:03:06",
+            "keyStrokeInfo": "",
+            "position": "47,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:03:07",
+            "keyStrokeInfo": "",
+            "position": "47,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:03:07",
+            "keyStrokeInfo": "",
+            "position": "47,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:03:07",
+            "keyStrokeInfo": "",
+            "position": "47,5"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:03:24",
+            "keyStrokeInfo": "        ",
+            "position": "47,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:03:26",
+            "keyStrokeInfo": "",
+            "position": "46,102"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 2,
+            "keyStrokeTimeStamp": "Fri Jul 16 2021 12:03:26",
+            "keyStrokeInfo": "",
+            "position": "46,1"
+        }
+    ]
+}

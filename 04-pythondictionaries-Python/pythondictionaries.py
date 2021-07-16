@@ -16,7 +16,7 @@ Cairo (Egypt, Africa)
 Shanghai (China, Asia)"""
 
 
-"""Print the following (using "print").
+"""Print the following (using "print"). 
 1. A list of all cities in the USA in
 alphabetic order. Make it function with name as sortUSA(), return list of cities
 2. All cities in Asia, in alphabetic
@@ -41,3 +41,5 @@ def alphaAsia():
 
 # Note: Check for test cases to understand the output format.
 locations = {'North America': {'USA': ['Mountain View']}}
+
+
