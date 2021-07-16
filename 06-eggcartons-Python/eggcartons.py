@@ -6,4 +6,10 @@
 
 def fun_eggcartons(eggs):
 	# your code goes here
-	return 1
+	a=eggs//12
+
+	if eggs%12==0:
+		return a
+	else:
+		return a+1
+	
