@@ -23,6 +23,12 @@
 
 def removeRowAndCol(L, row, col):
     # Your code goes here...
-    pass
+    #deleting the row
+    del L[row]
+    #deleting the column values by picking index
+    for i in L:
+        del i[col]
+    
+    return L
 
 # Write your own test cases.
