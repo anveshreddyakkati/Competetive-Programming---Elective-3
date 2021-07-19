@@ -1448,6 +1448,27 @@
             "keyStrokeTimeStamp": "Mon Jul 19 2021 07:14:28",
             "keyStrokeInfo": "",
             "position": "28,13"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Mon Jul 19 2021 07:15:47",
+            "keyStrokeInfo": "",
+            "position": "27,19"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Jul 19 2021 07:16:52",
+            "keyStrokeInfo": "",
+            "position": "25,9"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Jul 19 2021 07:16:57",
+            "keyStrokeInfo": "",
+            "position": "28,13"
         }
     ]
 }
