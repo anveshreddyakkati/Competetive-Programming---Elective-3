@@ -1,4 +1,4 @@
-# Write the function nearestBusStop(street) that takes a 
+# Write the function nearestBusStop(street) that takes x 
 # non-negative int street number, and returns the nearest 
 # bus stop to the given street, where buses stop every 8th street, 
 # including street 0, and ties go to the lower street, 
@@ -9,10 +9,14 @@
 
 def fun_nearestbusstop(street):
 	for i in range(street+1):
-		a = i*8
-		b = (i+1)*8
-		if(abs(street-a)<=8 and abs(street-b)<=8):
-			if((abs(street-a) > abs(street-b))):
-				return b
-			elif((abs(street-a) == abs(street-b)) or (abs(street-a) < abs(street-b))):
-				return a
+		#starting point
+		x = i*8
+		#ending point
+		y = (i+1)*8
+		#highest return
+		if(abs(street-x)<=8 and abs(street-y)<=8):
+			if((abs(street-x) > abs(street-y))):
+				return y
+				#lowest return
+			elif((abs(street-x) == abs(street-y)) or (abs(street-x) < abs(street-y))):
+				return x
