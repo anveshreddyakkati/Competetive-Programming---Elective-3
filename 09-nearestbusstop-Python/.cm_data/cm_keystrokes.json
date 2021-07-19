@@ -1,0 +1,25 @@
+{
+    "nearestbusstop.py": [
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Jul 19 2021 07:21:46",
+            "keyStrokeInfo": "\r\n\t",
+            "position": "10,32"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Jul 19 2021 07:26:44",
+            "keyStrokeInfo": "\r\n\t",
+            "position": "10,32"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 10,
+            "keyStrokeTimeStamp": "Mon Jul 19 2021 07:27:21",
+            "keyStrokeInfo": "def fun_nearestbusstop(street):\r\n\tif (street % 2 == 0):\r\n\t\tif (street % 8 == 0):\r\n\t\t\ts1 = street\r\n\t\t\treturn s1\r\n\t\ts1 = street - 4\r\n\t\treturn s1\r\n\telse:\r\n\t\ts1 = street + 3\r\n\treturn s1",
+            "position": "10,1"
+        }
+    ]
+}
