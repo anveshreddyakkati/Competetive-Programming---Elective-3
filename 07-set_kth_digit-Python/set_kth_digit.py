@@ -5,7 +5,31 @@
 # so the 0th digit is the rightmost digit. 
 
 
-
 def fun_set_kth_digit(n, k, d):
-		return 0
+    if n>0:
+
+        x=[str(i) for i in str(n)]
+        y=x[::-1]
+        b=len(x)
+        if k<(b):
+            y[k]=d
+            x=y[::-1]
+            f=int("".join([str(i) for i in x]))
+            return f
+        else:            
+            c=int(str(d)+str(n))        
+            return c
+    else:
+        n=abs(n)
+        x=[int(i) for i in str(n)]
+        y=x[::-1]
+        b=len(x)
+        if k>=(b):
+            
+            x=y[::-1]
+            f=("".join([str(i) for i in x]))
+            g=int(str("-")+str(d)+str(f))
+            return g
+
+
 
