@@ -21,10 +21,9 @@ def fun_set_kth_digit(n, k, d):
             return c
     else:
         n=abs(n)
-        x=[int(i) for i in str(n)]
-        
+        x=[int(i) for i in str(n)]        
         b=len(x)
-        if k>=(b):            
+        if k>=(b):     
             
             f=("".join([str(i) for i in x]))
             g=int(str("-")+str(d)+str(f))
