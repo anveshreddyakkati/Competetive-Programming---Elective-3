@@ -8,5 +8,11 @@
 # Another hint: This can be written using just one or two lines of Python.
 
 def largestperfectsquare(n):
+	for i in range (n):
+		if (i*i)<=(n):
+			d=i*i
+	return d
+
+
+
 	# your code goes here
-	pass
