@@ -24,7 +24,7 @@ def ishappynumber(n):
     
     #converting to the list
     x=list(("".join((i) for i in (str(n)))))
-    print("x",x)
+    # print("x",x)
 	#checking the length
     if (len(x)==1):
         if n in range (2,10):
@@ -38,7 +38,7 @@ def ishappynumber(n):
         for i in range(len(x)):
             k=int(x[i])
             a+=k*k
-            print("a",a)
+            # print("a",a)
             
         if a==1:
             return True
