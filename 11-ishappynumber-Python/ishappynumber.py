@@ -18,13 +18,14 @@
 # assert(ishappynumber(405) == False)
 
 def ishappynumber(n):
+	#convert negative number to positive
     n=abs(n)
     a=0
-    # if n in range (2,10):
-    #     return False
     
+    #converting to the list
     x=list(("".join((i) for i in (str(n)))))
     print("x",x)
+	#checking the length
     if (len(x)==1):
         if n in range (2,10):
             return False
@@ -32,6 +33,7 @@ def ishappynumber(n):
             return False 
         else:
             return True
+	#checking for more than 9
     else:
         for i in range(len(x)):
             k=int(x[i])
