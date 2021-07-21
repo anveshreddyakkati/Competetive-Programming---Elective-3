@@ -18,5 +18,28 @@
 # assert(ishappynumber(405) == False)
 
 def ishappynumber(n):
-	# your code goes here
-	pass
+    n=abs(n)
+    a=0
+    # if n in range (2,10):
+    #     return False
+    
+    x=list(("".join((i) for i in (str(n)))))
+    print("x",x)
+    if (len(x)==1):
+        if n in range (2,10):
+            return False
+        elif n==0:
+            return False 
+        else:
+            return True
+    else:
+        for i in range(len(x)):
+            k=int(x[i])
+            a+=k*k
+            print("a",a)
+            
+        if a==1:
+            return True
+        else:
+            return ishappynumber(a)
+
