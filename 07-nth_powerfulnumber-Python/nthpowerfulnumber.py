@@ -7,4 +7,5 @@
 
 def nthpowerfulnumber(n):
 	# Your code goes here
+	
 	pass
