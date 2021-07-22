@@ -5,25 +5,32 @@
 
 
 
+
 def fun_nth_additive_prime(n):
-
-
+	n=n+1
 	def additiveprime(n):
 		k=0
-		for i in (str(n)):
-			k+=int(i)
-		if k==2:
+		if n==1:
+			return False
+		elif n==2:
 			l.append(n)
 			return True
+		for i in range(2,(n//2)+1):
+			if n%i==0:
+				return False
+		
+		for i in (str(n)):
+			k+=int(i)
+		
 			
 		for i in range (2,k):
 			if k%i==0:
 				return False
-			else:
-				l.append(n)
-				return True
+		l.append(n)
+		return True
+	# print(fun_nth_additive_prime(9))
 
-
+	# n=15
 	x=0
 	y=0
 	l=[]
@@ -31,4 +38,4 @@ def fun_nth_additive_prime(n):
 		y+=1
 		additiveprime(y)
 		if (len(l)==n):
-			print(l[n-1])
+			return (l[n-1])
