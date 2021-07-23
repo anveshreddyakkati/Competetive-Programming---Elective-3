@@ -1,0 +1,25 @@
+{
+    "binarysearch.py": [
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Thu Jul 22 2021 19:32:30",
+            "keyStrokeInfo": "\r\n    ",
+            "position": "13,39"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Jul 23 2021 11:42:06",
+            "keyStrokeInfo": "",
+            "position": "14,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Fri Jul 23 2021 11:42:06",
+            "keyStrokeInfo": "",
+            "position": "13,39"
+        }
+    ]
+}
