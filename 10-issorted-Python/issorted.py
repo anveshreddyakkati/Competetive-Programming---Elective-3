@@ -6,5 +6,19 @@
 # the list.
 
 def issorted(a):
-	# your code goes here
-	pass
+    # your code goes here
+    cha = 0
+    tin = 0
+    jo = 1
+    while jo<len(a):
+        if(a[jo] < a[jo-1]):
+            cha = 1
+        elif(a[jo] > a[jo-1]):
+            tin = 1    
+        jo+=1
+   #checking for one to be false
+   #then returning true
+    if(not cha or not tin):
+        return True
+    else:
+        return False
