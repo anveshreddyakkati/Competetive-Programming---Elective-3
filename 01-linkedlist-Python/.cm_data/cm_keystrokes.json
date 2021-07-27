@@ -1,0 +1,95 @@
+{
+    "linkedlist.py": [
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 12:18:05",
+            "keyStrokeInfo": "\r\n            ",
+            "position": "44,22"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 2,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 12:18:06",
+            "keyStrokeInfo": "temp = temp.next\r\nreturn None\r\n",
+            "position": "45,13"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 12:18:12",
+            "keyStrokeInfo": "    ",
+            "position": "46,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 12:18:13",
+            "keyStrokeInfo": "    ",
+            "position": "46,5"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 12:18:14",
+            "keyStrokeInfo": "    ",
+            "position": "46,9"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 12:18:22",
+            "keyStrokeInfo": "",
+            "position": "46,9"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 12:18:56",
+            "keyStrokeInfo": "\r\n        ",
+            "position": "46,20"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 12:18:57",
+            "keyStrokeInfo": "",
+            "position": "47,5"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 12:18:57",
+            "keyStrokeInfo": "\r\n    ",
+            "position": "47,5"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 32,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 12:18:58",
+            "keyStrokeInfo": "def insert(self, new_element, position):\r\n        \"\"\"Insert a new node at the given position.\r\n        Assume the first position is \"1\".\r\n        Inserting at position 3 means between\r\n        the 2nd and 3rd elements.\"\"\"\r\n        # Your code goes here\r\n        if position == 1:\r\n            new_node = Element(new_element)\r\n            new_node.next = self.head\r\n            self.head = new_node\r\n        i = 1\r\n        n = self.head\r\n        while i < position-1 and n is not None:\r\n            n = n.next\r\n            i = i+1\r\n        if n is not None:\r\n            new_node = Element(new_element)\r\n            new_node.next = n.next\r\n            n.next = new_node\r\n\r\n    \r\n    def delete(self, value):\r\n        \"\"\"Delete the first node with a given value.\"\"\"\r\n        # Your code goes here\r\n        temp = self.head\r\n        beforenode = None\r\n\r\n        while(temp.next and temp.value!=value):\r\n            beforenode = temp\r\n            temp=temp.next\r\n        if(temp.value == value):\r\n            if(beforenode):\r\n",
+            "position": "48,5"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 12:19:02",
+            "keyStrokeInfo": "\r\n                ",
+            "position": "79,28"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 12:19:26",
+            "keyStrokeInfo": "\r\n                ",
+            "position": "80,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 3,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 12:19:27",
+            "keyStrokeInfo": "beforenode.next = temp.next\r\n            else:\r\n                self.head=temp.next\r\n",
+            "position": "80,17"
+        }
+    ]
+}
