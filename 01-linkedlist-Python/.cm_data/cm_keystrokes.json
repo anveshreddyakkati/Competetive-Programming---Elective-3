@@ -90,6 +90,148 @@
             "keyStrokeTimeStamp": "Tue Jul 27 2021 12:19:27",
             "keyStrokeInfo": "beforenode.next = temp.next\r\n            else:\r\n                self.head=temp.next\r\n",
             "position": "80,17"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 14:37:54",
+            "keyStrokeInfo": "",
+            "position": "11,10"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 14:37:57",
+            "keyStrokeInfo": "",
+            "position": "11,14"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 14:38:00",
+            "keyStrokeInfo": "",
+            "position": "16,10"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 14:38:04",
+            "keyStrokeInfo": "",
+            "position": "16,14"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 14:57:27",
+            "keyStrokeInfo": "-",
+            "position": "11,9"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 14:57:29",
+            "keyStrokeInfo": "",
+            "position": "11,9"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 14:57:30",
+            "keyStrokeInfo": "_",
+            "position": "11,9"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 14:57:36",
+            "keyStrokeInfo": "_",
+            "position": "11,16"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 14:57:39",
+            "keyStrokeInfo": "_",
+            "position": "16,10"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 14:57:43",
+            "keyStrokeInfo": "_",
+            "position": "16,15"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 70,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 14:59:22",
+            "keyStrokeInfo": "class Element(object):\r\n    def _init_(self, value):\r\n        self.value = value\r\n        self.next = None\r\n        \r\nclass LinkedList(object):\r\n    def _init_(self, head=None):\r\n        self.head = head\r\n        \r\n    def append(self, new_element):\r\n        # Your code goes here\r\n        temp=self.head\r\n        if self.head:\r\n            while temp.next:\r\n                temp=temp.next\r\n            temp.next=new_element\r\n        else:\r\n            self.head=new_element\r\n\r\n    def get_position(self, position):\r\n        \"\"\"Get an element from a particular position.\r\n        Assume the first position is \"1\".\r\n        Return \"None\" if position is not in the list.\"\"\"\r\n        # Your code goes here\r\n        count=1\r\n        temp=self.head\r\n        if(position<1):\r\n            return None\r\n        while (temp and count<=position):\r\n            if (count==position):\r\n                return temp\r\n            temp=temp.next\r\n            count+= 1\r\n        return None\r\n\r\n    \r\n    def insert(self, new_element, position):\r\n        \"\"\"Insert a new node at the given position.\r\n        Assume the first position is \"1\".\r\n        Inserting at position 3 means between\r\n        the 2nd and 3rd elements.\"\"\"\r\n        # Your code goes here\r\n        count=1\r\n        temp=self.head\r\n        if(position>1):\r\n            while(temp and count<position):\r\n                if (count==position-1):\r\n                    new_element.next=temp.next\r\n                    temp.next=new_element\r\n                temp=temp.next\r\n                count+=1\r\n        elif (position==1):\r\n            new_element.next=self.head\r\n            self.head=new_element\r\n\r\n    \r\n    \r\n    def delete(self, value):\r\n        \"\"\"Delete the first node with a given value.\"\"\"\r\n        # Your code goes here\r\n        temp=self.head\r\n        previous=None\r\n        while(temp.value!=value and temp.next):\r\n            previous=temp\r\n            temp=temp.next\r\n        if (temp.value==value):\r\n            if(previous):\r\n                previous.next=temp.next\r\n            else:\r\n                self.head=temp.next",
+            "position": "10,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 15:00:03",
+            "keyStrokeInfo": "-",
+            "position": "16,9"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 15:00:04",
+            "keyStrokeInfo": "",
+            "position": "16,9"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 15:00:04",
+            "keyStrokeInfo": "_",
+            "position": "16,9"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 15:00:08",
+            "keyStrokeInfo": "_",
+            "position": "16,15"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 15:00:19",
+            "keyStrokeInfo": "_",
+            "position": "11,9"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 15:00:24",
+            "keyStrokeInfo": "_",
+            "position": "11,16"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 15:34:14",
+            "keyStrokeInfo": "# ",
+            "position": "76,13"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 15:34:17",
+            "keyStrokeInfo": "",
+            "position": "79,13"
+        }
+    ],
+    "test_solution.py": [
+        {
+            "operation": "PASTE",
+            "lines": 29,
+            "keyStrokeTimeStamp": "Tue Jul 27 2021 14:58:47",
+            "keyStrokeInfo": "import os,sys\r\nsys.path.append(os.getcwd())\r\nfrom linkedlist import LinkedList \r\nfrom linkedlist import Element \r\nimport pytest\r\n\r\ne1 = Element(1)\r\ne2 = Element(2)\r\ne3 = Element(3)\r\n\r\nll = LinkedList(e1)\r\nll.append(e2)\r\nll.append(e3)\r\n\r\n@pytest.mark.parametrize(\"x,result\",[(3,3),(2,2)])\r\ndef test_get_position(x,result):    \r\n    assert ll.get_position(x).value == result\r\n\r\n@pytest.mark.parametrize(\"position,result\",[(3,4)])\r\ndef test_insert(position,result):\r\n    e4 = Element(4)\r\n    ll.insert(e4,3)\r\n    assert ll.get_position(position).value == result\r\n\r\n\r\n@pytest.mark.parametrize(\"val,result\",[(1,2),(2,4),(3,3)])\r\ndef test_delete(val,result):\r\n    ll.delete(1)\r\n    assert ll.get_position(val).value == result",
+            "position": "1,1"
         }
     ]
 }
