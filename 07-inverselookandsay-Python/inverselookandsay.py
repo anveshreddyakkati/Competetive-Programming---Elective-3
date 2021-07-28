@@ -22,4 +22,12 @@
 
 def inverselookandsay(a):
 	# Your code goes here
+	if len(a)==0:
+		return a
+	else:
+		for i in range (len(a)):
+			c=a[i]
+			
+
+
 	pass
