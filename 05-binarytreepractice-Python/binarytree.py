@@ -17,15 +17,6 @@ class BinaryTree(object):
         return self.preorder_search(self.root,find_val)
 
 
-        
-
-
-
-
-
-
-
-
     def print_tree(self):
         """
         Print out all tree nodes as they are visited in a pre-order traversal."""
