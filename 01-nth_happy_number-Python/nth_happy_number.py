@@ -15,104 +15,87 @@
 # assert(happynumber(8) == 31)
 
 
-# def happynumber(q):
-#     #convert negative number to positive
-#     q=abs(q)
-#     a=0
-    
-#     #converting to the list
-#     x=list(("".join((i) for i in (str(q)))))
-#     # print("x",x)
-#     #checking the length
-#     if (len(x)==1):
-#         if q in range (2,7):
-#             print(q)
-#             # print(l)
-#         elif q in range(8,10):
-#             print(q)
-#         elif q==0:
-#             print(q) 
-#         else:
-#             l.append(z)
-#             # print(l)
-#             print(q)
-#     #checking for more than 9
-#     else:
-#         for i in range(len(x)):
-#             k=int(x[i])
-#             a+=k*k
-#             # print("a",a)
-            
-#         if a==1:
-#             l.append(z)
-#             # print(l)
-#             return q
-#         else:
-#             return happynumber(a)
-# # print(nth-_happy_number(23))
-
-
-# l=[]
-# i=0
-# while (len(l)!=3):
-#     i+=1
-#     z=i
-    
-#     print(happynumber(i))
-#     # print (l[0])
-    
-
 
    
 
-def nth_happy_number(n):
+# def nth_happy_number(n):
 
 
-    m=[1,7]
-    a=0
+#     m=[1,7]
+#     a=0
 
-    def happynumber(q):
-        #convert negative number to positive
-        q=abs(q)
-        a=0
+#     def happynumber(q):
+#         #convert negative number to positive
+#         q=abs(q)
+#         a=0
         
-        #converting to the list
-        x=list(("".join((i) for i in (str(q)))))
-        # print("x",x)
-        #checking the length
-        if (len(x)==1):
-            if q in (m):
-                l.append(z)
+#         #converting to the list
+#         x=list(("".join((i) for i in (str(q)))))
+#         # print("x",x)
+#         #checking the length
+#         if (len(x)==1):
+#             if q in (m):
+#                 l.append(z)
                 
-                # print(l)
+#                 # print(l)
             
                 
-            # else:
-            #     continue
-                # l.append(z)
-                # print(l)
+#             # else:
+#             #     continue
+#                 # l.append(z)
+#                 # print(l)
                 
-        #checking for more than 9
-        else:
-            for i in range(len(x)):
-                k=int(x[i])
-                a+=k*k
-                # print("a",a)
+#         #checking for more than 9
+#         else:
+#             for i in range(len(x)):
+#                 k=int(x[i])
+#                 a+=k*k
+#                 # print("a",a)
                 
-            if a==1:
-                l.append(z)
-                # print(l)
-                return z
-            else:
-                return happynumber(a)
-    # print(nth-_happy_number(23))
+#             if a==1:
+#                 l.append(z)
+#                 # print(l)
+#                 return z
+#             else:
+#                 return happynumber(a)
+#     # print(nth-_happy_number(23))
 
 
-    l=[]
-    i=0
-    while (len(l)!=n):
-        i+=1
-        z=i
-        happynumber(i)
-        if len(l)==n:
-            return (l[n-1])
+#     l=[]
+#     i=0
+#     while (len(l)!=n):
+#         i+=1
+#         z=i
+#         happynumber(i)
+#         if len(l)==n:
+#             return (l[n-1])
+
+
+def ishappynumber(n): 
+	
+	reminder = 0
+	total = 0
+    # taking the last digit
+	while(n>0):
+		reminder = n%10
+		total = total +(reminder*reminder)
+		n = n//10
+	
+	if(total==1):
+		return True
+    #when total >9 checking again whether it will total to 1 or not
+	elif(total>9):
+		return ishappynumber(total)	
+	else:
+		return False
+# condition to go to the nth position
+def nth_happy_number(n):
+    c = 0
+    l = 0
+    num = 1
+    while(c!=n):
+        if(ishappynumber(num) == True):
+            c+=1
+            l = num
+        num = num+1
+    return l
