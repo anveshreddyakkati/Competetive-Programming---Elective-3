@@ -14,8 +14,17 @@ class BinaryTree(object):
         """
         # Your code goes here
         # passing the value to another method
+        return self.preorder_search(self.root,find_val)
 
-        return self.preorder_search(self.root, find_val)
+
+        
+
+
+
+
+
+
+
 
     def print_tree(self):
         """
@@ -23,6 +32,7 @@ class BinaryTree(object):
         # Your code goes here
         #Passing the code to print 
         self.preorder_print(self.root)
+       
 
         
 
@@ -32,13 +42,14 @@ class BinaryTree(object):
         """
         # Your code goes here
         #searching for theelement
-
-        if start == None:
+        if (start is None):
             return False
-        if start.value == find_val:
+        if(start.value==find_val):
             return True
-        return self.preorder_search(start.left, find_val) or self.preorder_search(start.right, find_val)
+        return self.preorder_search(start.left,find_val) or self.preorder_search(start.right,find_val)
+        
 
+       
 
     def preorder_print(self, start, traversal):
         """
@@ -46,11 +57,12 @@ class BinaryTree(object):
         """
         # Your code goes here
         #printing the ebtire tree
-        if start is None:
-            return
-        print(start.value)
+        if(start is None):
+            return None
         self.preorder_print(start.left)
         self.preorder_print(start.right)
+
+       
         
 
 
