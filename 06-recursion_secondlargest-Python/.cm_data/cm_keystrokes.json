@@ -1413,6 +1413,20 @@
             "keyStrokeTimeStamp": "Thu Jul 29 2021 16:18:12",
             "keyStrokeInfo": "1",
             "position": "28,17"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 34,
+            "keyStrokeTimeStamp": "Thu Jul 29 2021 17:51:39",
+            "keyStrokeInfo": "def recursion_secondlargest(L):\r\n    # Your code goes here\r\n    if len(L)==0 or len(L)==1:\r\n        return None\r\n    \r\n    def recurse(L,i,s,z):\r\n        if (i<(len(L))):\r\n\r\n            a=abs(L[i-1])\r\n            b=abs(L[i])\r\n            if a>b:\r\n                if b>s:\r\n                    z.remove(s)\r\n                    s=b\r\n                    z.append(s)\r\n                L.remove(L[i])\r\n                recurse(L,i,s,z)\r\n            elif b>a:\r\n                if a>s:\r\n                    z.remove(s)\r\n                    s=a\r\n                    z.append(s)\r\n                L.remove(L[i-1])\r\n                recurse(L,i,s,z)\r\n            else:\r\n                return a\r\n        if L[0]>z[0]:\r\n            return z[0]\r\n        return L[0]\r\n    i=1\r\n    s=0\r\n    z=[]\r\n    z.append(s)\r\n    return (recurse(L,i,s,z))",
+            "position": "16,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 41,
+            "keyStrokeTimeStamp": "Thu Jul 29 2021 18:20:15",
+            "keyStrokeInfo": "from collections import Counter\r\ndef recursion_secondlargest(L):\r\n    o=Counter(L)\r\n    # Your code goes here\r\n    if len(L)==0 or len(L)==1:\r\n        return None\r\n    \r\n    def recurse(L,i,s,z):\r\n        if (i<(len(L))):\r\n\r\n            a=abs(L[i-1])\r\n            b=abs(L[i])\r\n            if a>b:\r\n                if b>s:\r\n                    z.remove(s)\r\n                    s=b\r\n                    z.append(s)\r\n                L.remove(L[i])\r\n                recurse(L,i,s,z)\r\n            elif b>a:\r\n                if a>s:\r\n                    z.remove(s)\r\n                    s=a\r\n                    z.append(s)\r\n                L.remove(L[i-1])\r\n                recurse(L,i,s,z)\r\n            else:\r\n                return a\r\n        if L[0]>z[0] and o[L[0]]==1:          \r\n            \r\n            return z[0]\r\n        elif z[0]>L[0]:\r\n            return L[0]\r\n        else:\r\n             \r\n            return L[0]\r\n    i=1\r\n    s=0\r\n    z=[]\r\n    z.append(s)\r\n    return (recurse(L,i,s,z))",
+            "position": "16,1"
         }
     ]
 }

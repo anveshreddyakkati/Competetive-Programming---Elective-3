@@ -13,18 +13,45 @@
 # Again, you do not need to sort the list. We didn't sort it in our sample solution. We just tracked the two largest 
 # values as we recursively traversed the list. Also, you may not use loops/iteration in this problem
 
+from collections import Counter
 def recursion_secondlargest(L):
-	# Your code goes here
-	if len(L)==0 or len(L)==1:
-		return None
-	i=0
-	def recurse(L,i):
-		if (i<len(L)-1):
+    o=Counter(L)
+    # Your code goes here
+    if len(L)==0 or len(L)==1:
+        return None
+    
+    def recurse(L,i,s,z):
+        if (i<(len(L))):
 
-			a=L[i]
-			b=L[i+1]
-			if a>b:
-				L.remove(b)
-				recurse(L,i+1)
-		return L
+            a=abs(L[i-1])
+            b=abs(L[i])
+            if a>b:
+                if b>s:
+                    z.remove(s)
+                    s=b
+                    z.append(s)
+                L.remove(L[i])
+                recurse(L,i,s,z)
+            elif b>a:
+                if a>s:
+                    z.remove(s)
+                    s=a
+                    z.append(s)
+                L.remove(L[i-1])
+                recurse(L,i,s,z)
+            else:
+                return a
+        if L[0]>z[0] and o[L[0]]==1:          
+            
+            return z[0]
+        elif z[0]>L[0]:
+            return L[0]
+        else:
+             
+            return L[0]
+    i=1
+    s=0
+    z=[]
+    z.append(s)
+    return (recurse(L,i,s,z))
 		
