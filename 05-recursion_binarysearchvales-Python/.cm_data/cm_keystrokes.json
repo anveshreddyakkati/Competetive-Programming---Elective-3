@@ -1490,6 +1490,55 @@
             "keyStrokeTimeStamp": "Thu Jul 29 2021 09:27:11",
             "keyStrokeInfo": "\t",
             "position": "31,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Thu Jul 29 2021 09:55:04",
+            "keyStrokeInfo": "",
+            "position": "28,36"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Thu Jul 29 2021 09:55:04",
+            "keyStrokeInfo": "",
+            "position": "28,36"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Thu Jul 29 2021 09:55:05",
+            "keyStrokeInfo": "",
+            "position": "28,36"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Thu Jul 29 2021 09:55:09",
+            "keyStrokeInfo": "",
+            "position": "28,39"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Thu Jul 29 2021 09:55:14",
+            "keyStrokeInfo": "",
+            "position": "30,34"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Thu Jul 29 2021 09:55:16",
+            "keyStrokeInfo": "",
+            "position": "30,34"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Thu Jul 29 2021 09:55:19",
+            "keyStrokeInfo": "",
+            "position": "30,37"
         }
     ]
 }

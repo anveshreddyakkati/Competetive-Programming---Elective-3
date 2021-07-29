@@ -25,9 +25,9 @@ def recursion_binarysearchvalues(L, v):
 		k.append((mid,L[mid]))
 		return k
 	elif(L[mid]<v):
-		recursion_binarysearchvalues(L[ : L[mid]],v)
+		recursion_binarysearchvalues(L[ :mid],v)
 	else:
-		recursion_binarysearchvalues(L[L[mid]: ],v)
+		recursion_binarysearchvalues(L[mid: ],v)
 	return None
 		
 	# Your codes goes here
