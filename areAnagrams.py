@@ -15,4 +15,7 @@ def areAnagrams(s1, s2):
         return True
     return False
 
-assert()
+assert(areAnagrams("Anvesh","nAVesh") == True)
+assert(areAnagrams("ROHITH","rhoith") == True)
+assert(areAnagrams("venu","Vniu") == False)
+print ("All test cases passed....")
