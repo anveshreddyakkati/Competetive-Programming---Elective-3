@@ -15,4 +15,16 @@
 
 def recursion_secondlargest(L):
 	# Your code goes here
-	pass
+	if len(L)==0 or len(L)==1:
+		return None
+	i=0
+	def recurse(L,i):
+		if (i<len(L)-1):
+
+			a=L[i]
+			b=L[i+1]
+			if a>b:
+				L.remove(b)
+				recurse(L,i+1)
+		return L
+		
