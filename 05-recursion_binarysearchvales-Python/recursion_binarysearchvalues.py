@@ -18,17 +18,20 @@
 # Hint: Do not slice the list L, but rather adjust the indexes into L. 
 k=[]
 def recursion_binarysearchvalues(L, v):
-	low=0
-	high=len(L)-1
-	mid=(low+high)//2
-	if L[mid]==v:
-		k.append((mid,L[mid]))
-		return k
-	elif(L[mid]<v):
-		recursion_binarysearchvalues(L[ :mid-1],v)
-	else:
-		recursion_binarysearchvalues(L[mid+1: ],v)
-	return None
+    low=0
+    high=len(L)-1
+    mid=(low+high)//2
+    if L[mid]==v:
+        k.append((mid,L[mid]))
+        return k
+    elif(L[mid]<v):
+        k.append((mid,L[mid]))
+        recursion_binarysearchvalues(L[mid+1: ],v)
+    else:
+        k.append((mid,L[mid]))
+        recursion_binarysearchvalues(L[:mid-1],v)
+    return k
+
 		
 	# Your codes goes here
 	

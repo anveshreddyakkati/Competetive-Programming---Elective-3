@@ -1567,6 +1567,20 @@
             "keyStrokeTimeStamp": "Thu Jul 29 2021 10:46:13",
             "keyStrokeInfo": "1",
             "position": "30,38"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 16,
+            "keyStrokeTimeStamp": "Thu Jul 29 2021 11:22:58",
+            "keyStrokeInfo": "k=[]\r\ndef recursion_binarysearchvalues(L, v):\r\n    low=0\r\n    high=len(L)-1\r\n    mid=(low+high)//2\r\n    if L[mid]==v:\r\n        k.append((mid,L[mid]))\r\n        return k\r\n    elif(L[mid]<v):\r\n        k.append((mid,L[mid]))\r\n        recursion_binarysearchvalues(L[mid+1: ],v)\r\n    else:\r\n        k.append((mid,L[mid]))\r\n        recursion_binarysearchvalues(L[:mid-1],v)\r\n    return k\r\nprint(recursion_binarysearchvalues([\"a\",\"b\",\"c\"],\"c\"))",
+            "position": "19,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Thu Jul 29 2021 11:23:03",
+            "keyStrokeInfo": "",
+            "position": "34,1"
         }
     ]
 }
