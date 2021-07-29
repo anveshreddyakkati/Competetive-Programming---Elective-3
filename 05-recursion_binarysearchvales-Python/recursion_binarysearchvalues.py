@@ -52,8 +52,7 @@ def recursion_binarysearchvalues(L, v):
             
             elif L[mid] > v:
 				#recursive call if value less than mid
-                k.append((mid,L[mid]))
-                
+                k.append((mid,L[mid]))                
                 return binarySearch(L, start, mid-1, v)
       
             
