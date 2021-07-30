@@ -6,6 +6,27 @@
             "keyStrokeTimeStamp": "Thu Jul 29 2021 19:13:55",
             "keyStrokeInfo": "\r\n    ",
             "position": "11,28"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 38,
+            "keyStrokeTimeStamp": "Fri Jul 30 2021 10:31:52",
+            "keyStrokeInfo": "def isprime(p):\r\n    primes=[]\r\n    if p==2:\r\n        primes.append(p)\r\n        \r\n        return True\r\n    else:\r\n        for i in range(2,(p//2)+1):\r\n            if p%i==0:\r\n                break\r\n            primefactors.append(p)\r\n            \r\ndef fun_nth_smithnumber(n):\r\n    primefactors=[]\r\n    for i in range(2,(n//2)+1):\r\n        if n%i==0 and isprime(i)==True:\r\n            primefactors.append(i)\r\n    c=0\r\n    flag=True\r\n   \r\n        \r\n    for i in primefactors:\r\n        flag=True\r\n        while(flag):        \r\n            \r\n            if n%i==0:\r\n                c=c+i\r\n                n=n//i\r\n            else:\r\n               \r\n                flag=False\r\n                \r\n                \r\n            \r\n        \r\n    \r\n    return c\r\nprint(fun_nth_smithnumber(22))",
+            "position": "11,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 71,
+            "keyStrokeTimeStamp": "Fri Jul 30 2021 12:10:25",
+            "keyStrokeInfo": "\r\ndef isprime(p):\r\n    primes=[]\r\n    if p==2:\r\n        primes.append(p)\r\n        \r\n        return True\r\n    else:\r\n        for i in range(2,(p//2)+1):\r\n            if p%i==0:\r\n                break\r\n        else:\r\n            primefactors.append(p)\r\n            \r\ndef fun_nth_smithnumber(n):\r\n    l=n\r\n    k=n\r\n    v=0\r\n    x=0\r\n    a=0\r\n    if n<10:\r\n        x=n\r\n    elif n>9:\r\n        s=0\r\n        while(n>0):\r\n            s=n%10\r\n            a=a+s\r\n            n=n//10\r\n        \r\n    \r\n    for i in range(2,(k//2)+1):\r\n        if k%i==0 and isprime(i)==True:\r\n            primefactors.append(i)\r\n    c=0\r\n    flag=True\r\n   \r\n        \r\n    for i in primefactors:\r\n        flag=True\r\n        while(flag):        \r\n            \r\n            if k%i==0 and k!=0:\r\n                c=c+i\r\n                k=k//i\r\n            else:\r\n               \r\n                flag=False\r\n                \r\n    b=0\r\n    q=0\r\n    for i in primefactors:\r\n        if i<10:\r\n            b=b+i\r\n        else:\r\n            while(i>0):\r\n                q=i%10\r\n                b=b+q\r\n                i=i//10\r\n                \r\n        \r\n    if c==l and c!=l:\r\n        print(\"cl\")\r\n        #4#false5\r\n    if c==a:\r\n        print(\"ca\")#false7,5\r\n    if a==b and :\r\n        print(\"ab\")#false7,5,84#true 22,84\r\n    if c==b:\r\n        print(\"cb\")#false 5,6,7,10,2311#false5\r\n    return False\r\nprimefactors=[]\r\nprint(fun_nth_smithnumber(85))",
+            "position": "9,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Fri Jul 30 2021 12:10:38",
+            "keyStrokeInfo": "# ",
+            "position": "80,1"
         }
     ]
 }
