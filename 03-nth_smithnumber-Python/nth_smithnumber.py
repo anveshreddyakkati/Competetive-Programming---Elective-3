@@ -78,3 +78,60 @@
 #     return False
 # primefactors=[]
 # print(fun_nth_smithnumber(85))
+
+
+
+from sympy import *
+
+def fun_nth_smithnumber(n):
+    def isSmith( n) :
+        prime=[]
+        primes=[]
+        
+        for i in range (2,(n//2)+1):
+            if n%i==0:
+                prime.append(i)
+        for i in prime:
+            if (isprime(i)==True):
+                primes.append(i)
+        
+        inval = n
+          
+       
+        psum = 0
+        i=0
+        while (i<len(primes)  and primes[i]<= n/2) :
+              
+            while n % primes[i] == 0 :
+                p = primes[i]
+                n = n/p
+                while p > 0 :
+                    psum += (p % 10)
+                    p = p//10
+            i=i+1
+       
+        if not n == 1 and not n == inval :
+            while n > 0 :
+                psum = psum + n%10
+                n=n//10
+            
+      
+        insum = 0
+        while inval != 0 :
+            insum = insum + inval % 10
+            inval = inval//10
+              
+       
+        if (psum == insum):
+            
+            return True
+    count=0
+    i=1
+    while(n+1!=count):  
+        if(isSmith(i)==True):
+            m=i
+            count+=1
+        i=i+1
+    return m
+
+
