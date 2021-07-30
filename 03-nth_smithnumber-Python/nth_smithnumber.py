@@ -79,7 +79,7 @@
 # primefactors=[]
 # print(fun_nth_smithnumber(85))
 
-
+#///////////////////////////////////////
 
 from sympy import *
 
