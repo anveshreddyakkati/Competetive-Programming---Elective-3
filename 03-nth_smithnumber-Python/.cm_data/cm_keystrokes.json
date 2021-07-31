@@ -2225,6 +2225,356 @@
             "keyStrokeTimeStamp": "Fri Jul 30 2021 19:42:31",
             "keyStrokeInfo": "from sympy import *\r\n\r\ndef fun_nth_smithnumber(n):\r\n    def isSmith( n) :\r\n        prime=[]\r\n        primes=[]\r\n        \r\n        for i in range (2,(n//2)+1):\r\n            if n%i==0:\r\n                prime.append(i)\r\n        for i in prime:\r\n            if (isprime(i)==True):\r\n                primes.append(i)\r\n        \r\n        inval = n\r\n          \r\n       \r\n        psum = 0\r\n        i=0\r\n        while (i<len(primes)  and primes[i]<= n/2) :\r\n              \r\n            while n % primes[i] == 0 :\r\n                p = primes[i]\r\n                n = n/p\r\n                while p > 0 :\r\n                    psum += (p % 10)\r\n                    p = p//10\r\n            i=i+1\r\n       \r\n        if not n == 1 and not n == inval :\r\n            while n > 0 :\r\n                psum = psum + n%10\r\n                n=n//10\r\n            \r\n      \r\n        insum = 0\r\n        while inval != 0 :\r\n            insum = insum + inval % 10\r\n            inval = inval//10\r\n              \r\n       \r\n        if (psum == insum):\r\n            \r\n            return True\r\n    count=0\r\n    i=1\r\n    while(n+1!=count):  \r\n        if(isSmith(i)==True):\r\n            m=i\r\n            count+=1\r\n        i=i+1\r\n    return m\r\n",
             "position": "84,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:08",
+            "keyStrokeInfo": "# ",
+            "position": "135,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:10",
+            "keyStrokeInfo": "/",
+            "position": "138,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:10",
+            "keyStrokeInfo": "/",
+            "position": "138,2"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:10",
+            "keyStrokeInfo": "/",
+            "position": "138,3"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:10",
+            "keyStrokeInfo": "/",
+            "position": "138,4"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:10",
+            "keyStrokeInfo": "/",
+            "position": "138,5"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:10",
+            "keyStrokeInfo": "/",
+            "position": "138,6"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:10",
+            "keyStrokeInfo": "/",
+            "position": "138,7"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:10",
+            "keyStrokeInfo": "/",
+            "position": "138,8"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:10",
+            "keyStrokeInfo": "/",
+            "position": "138,9"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:10",
+            "keyStrokeInfo": "/",
+            "position": "138,10"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:10",
+            "keyStrokeInfo": "/",
+            "position": "138,11"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:10",
+            "keyStrokeInfo": "/",
+            "position": "138,12"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,13"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,14"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,15"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,16"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,17"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,18"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,19"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,20"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,21"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,22"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,23"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,24"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,25"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,26"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,27"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,28"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,29"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,30"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:11",
+            "keyStrokeInfo": "/",
+            "position": "138,31"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:20",
+            "keyStrokeInfo": "# ",
+            "position": "138,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:22",
+            "keyStrokeInfo": "\r\n",
+            "position": "138,34"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:23",
+            "keyStrokeInfo": "\r\n",
+            "position": "139,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 125,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:24",
+            "keyStrokeInfo": "def isprime(n):\r\n    if n==1:\r\n        return False\r\n    if n==2:\r\n        return True    \r\n    for i in range(2, (n//2)+1):\r\n        if(n%i==0):\r\n            return False\r\n    else:\r\n        return True\r\n# def repeatsum(n):\r\n#     q=0\r\n#     f=0\r\n#     while(n!=0):\r\n#         f=n%10\r\n#         q+=f\r\n#         n=n//10\r\n#     if(q>9):\r\n#         return repeatsum(q)\r\n#     else: \r\n#         return q        \r\ndef smith(n):\r\n    if(isprime(n)!=True):\r\n        k = n\r\n        factors = []\r\n        sumoffactors=0\r\n        sumofnumbers=0\r\n        rem=0\r\n        srem = 0\r\n        stotal = 0\r\n        x =0\r\n        z =0\r\n        ve = 0\r\n        ro = 0\r\n        if n==1:\r\n            return False\r\n        for i in range(2,(n//2) + 1):\r\n            if(isprime(i)==True) and (n%i==0):\r\n                factors.append(i)\r\n         \r\n        for an in str(n):\r\n            ro+=int(an)\r\n            # ro+=an        \r\n        # print(\"sumofnumbers:\",sumofnumbers)\r\n        # while(sumofnumbers!=0):\r\n        #     x=sumofnumbers%10\r\n        #     z+=x\r\n        #     sumofnumbers=sumofnumbers//10\r\n        # print(\"z:\",z) \r\n        li=[]\r\n        for i in factors:\r\n            while (k%i==0 and k!=0):\r\n                li.append(i)    \r\n                sumoffactors+=i\r\n                k=k//i\r\n      #   print(li)\r\n        e = 0        \r\n        for j in li:\r\n            if(j>9):\r\n                for d in str(j):\r\n                    e+=int(d)\r\n            else:\r\n               e+=j\r\n            # print(\"sumoffactors:\",sumoffactors)\r\n        # while(sumoffactors!=0):\r\n        #     srem=sumoffactors%10\r\n        #     stotal+=srem\r\n        #     sumoffactors=sumoffactors//10\r\n        # print(\"stotal:\",stotal)\r\n      #   print(ro)\r\n      #   print(e)\r\n        if(ro==e):\r\n            return True\r\n        else:\r\n            return False\r\ndef fun_nth_smithnumber(n):\r\n    count=0\r\n    ev=1\r\n    re = 0\r\n    while(n+1!=count):\r\n        if(smith(ev)==True):\r\n            count+=1\r\n            re = ev\r\n        ev+=1\r\n    return re\r\n# print(fun_nth_smithnumber(4))\r\n# print(smith(274))\r\n# print(smith(85))\r\n# print(smith(121))\r\n# print(smith(27))\r\n# print(smith(13))\r\n# print(smith(2))\r\n# print(smith(15))\r\n# print(smith(11))\r\n# print(smith(57))\r\n# print(smith(105))\r\nprint(fun_nth_smithnumber(0))#4\r\nprint(fun_nth_smithnumber(1))#22\r\nprint(fun_nth_smithnumber(2))#27\r\nprint(fun_nth_smithnumber(5))#94\r\nprint(fun_nth_smithnumber(5))#94\r\nprint(fun_nth_smithnumber(6))#94\r\nprint(fun_nth_smithnumber(7))#94\r\nprint(fun_nth_smithnumber(8))#94\r\nprint(fun_nth_smithnumber(9))#94\r\nprint(fun_nth_smithnumber(10))#274\r\nprint(fun_nth_smithnumber(15))#382\r\nprint(fun_nth_smithnumber(17))#438\r\n\r\n# print(fun_nth_smithnumber(19))#483\r\n\r\n\r\n# print(fun_nth_smithnumber(10))\r\n# print(smith(58))\r\n# print(smith(85))\r\n# print(smith(22))\r\n# print(smith(27))\r\n# print(smith(13))\r\n# print(smith(2))\r\n# print(smith(15))\r\n# print(smith(11))\r\n# print(smith(57))\r\n# print(smith(438))\r\n# print(smith(483))\r\n# print(smith(481))",
+            "position": "140,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:09:31",
+            "keyStrokeInfo": "# ",
+            "position": "247,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 7,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:10:01",
+            "keyStrokeInfo": "",
+            "position": "203,9"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:10:06",
+            "keyStrokeInfo": "",
+            "position": "195,7"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 6,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:10:11",
+            "keyStrokeInfo": "",
+            "position": "182,8"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 10,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:10:17",
+            "keyStrokeInfo": "",
+            "position": "150,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 11,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:10:21",
+            "keyStrokeInfo": "# def repeatsum(n):\r\n#     q=0\r\n#     f=0\r\n#     while(n!=0):\r\n#         f=n%10\r\n#         q+=f\r\n#         n=n//10\r\n#     if(q>9):\r\n#         return repeatsum(q)\r\n#     else: \r\n#         return q   ",
+            "position": "150,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:11:26",
+            "keyStrokeInfo": "\r\n",
+            "position": "138,34"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:11:28",
+            "keyStrokeInfo": "from sympy import *",
+            "position": "139,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:11:34",
+            "keyStrokeInfo": "# ",
+            "position": "150,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:12:17",
+            "keyStrokeInfo": "",
+            "position": "163,10"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:12:18",
+            "keyStrokeInfo": "P",
+            "position": "163,10"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:12:21",
+            "keyStrokeInfo": "",
+            "position": "163,10"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:12:21",
+            "keyStrokeInfo": "p",
+            "position": "163,10"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 53,
+            "keyStrokeTimeStamp": "Sat Jul 31 2021 10:12:52",
+            "keyStrokeInfo": "",
+            "position": "82,1"
         }
     ]
 }

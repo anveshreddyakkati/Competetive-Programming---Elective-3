@@ -79,59 +79,121 @@
 # primefactors=[]
 # print(fun_nth_smithnumber(85))
 
-#///////////////////////////////////////
 
+
+
+# ///////////////////////////////
 from sympy import *
 
-def fun_nth_smithnumber(n):
-    def isSmith( n) :
-        prime=[]
-        primes=[]
-        
-        for i in range (2,(n//2)+1):
-            if n%i==0:
-                prime.append(i)
-        for i in prime:
-            if (isprime(i)==True):
-                primes.append(i)
-        
-        inval = n
-          
+# def isprime(n):
+#     if n==1:
+#         return False
+#     if n==2:
+#         return True    
+#     for i in range(2, (n//2)+1):
+#         if(n%i==0):
+#             return False
+#     else:
+#         return True
+# def repeatsum(n):
+#     q=0
+#     f=0
+#     while(n!=0):
+#         f=n%10
+#         q+=f
+#         n=n//10
+#     if(q>9):
+#         return repeatsum(q)
+#     else: 
+#         return q        
+def smith(n):
+    if(isprime(n)!=True):
+        k = n
+        factors = []
+        sumoffactors=0
+        sumofnumbers=0
+        rem=0
+        srem = 0
+        stotal = 0
+        x =0
+        z =0
+        ve = 0
+        ro = 0
+        if n==1:
+            return False
+        for i in range(2,(n//2) + 1):
+            if(isprime(i)==True) and (n%i==0):
+                factors.append(i)
+         
+        for an in str(n):
+            ro+=int(an)
        
-        psum = 0
-        i=0
-        while (i<len(primes)  and primes[i]<= n/2) :
-              
-            while n % primes[i] == 0 :
-                p = primes[i]
-                n = n/p
-                while p > 0 :
-                    psum += (p % 10)
-                    p = p//10
-            i=i+1
-       
-        if not n == 1 and not n == inval :
-            while n > 0 :
-                psum = psum + n%10
-                n=n//10
-            
+        li=[]
+        for i in factors:
+            while (k%i==0 and k!=0):
+                li.append(i)    
+                sumoffactors+=i
+                k=k//i
       
-        insum = 0
-        while inval != 0 :
-            insum = insum + inval % 10
-            inval = inval//10
-              
-       
-        if (psum == insum):
-            
+        e = 0        
+        for j in li:
+            if(j>9):
+                for d in str(j):
+                    e+=int(d)
+            else:
+               e+=j
+        
+        if(ro==e):
             return True
+        else:
+            return False
+def fun_nth_smithnumber(n):
     count=0
-    i=1
-    while(n+1!=count):  
-        if(isSmith(i)==True):
-            m=i
+    ev=1
+    re = 0
+    while(n+1!=count):
+        if(smith(ev)==True):
             count+=1
-        i=i+1
-    return m
+            re = ev
+        ev+=1
+    return re
+# print(fun_nth_smithnumber(4))
+# print(smith(274))
+# print(smith(85))
+# print(smith(121))
+# print(smith(27))
+# print(smith(13))
+# print(smith(2))
+# print(smith(15))
+# print(smith(11))
+# print(smith(57))
+# print(smith(105))
+# print(fun_nth_smithnumber(0))#4
+# print(fun_nth_smithnumber(1))#22
+# print(fun_nth_smithnumber(2))#27
+# print(fun_nth_smithnumber(5))#94
+# print(fun_nth_smithnumber(5))#94
+# print(fun_nth_smithnumber(6))#94
+# print(fun_nth_smithnumber(7))#94
+# print(fun_nth_smithnumber(8))#94
+# print(fun_nth_smithnumber(9))#94
+# print(fun_nth_smithnumber(10))#274
+# print(fun_nth_smithnumber(15))#382
+# print(fun_nth_smithnumber(17))#438
+
+# print(fun_nth_smithnumber(19))#483
 
 
+# print(fun_nth_smithnumber(10))
+# print(smith(58))
+# print(smith(85))
+# print(smith(22))
+# print(smith(27))
+# print(smith(13))
+# print(smith(2))
+# print(smith(15))
+# print(smith(11))
+# print(smith(57))
+# print(smith(438))
+# print(smith(483))
+# print(smith(481))
