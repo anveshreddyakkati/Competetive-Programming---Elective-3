@@ -20,7 +20,7 @@ class SayHi(object):
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        print("Hi my name is",self.name,"and I am ",self.age,"years old!")
+        print("Hi my name is",self.name,"and I am ",self.age,"years")
  
 
 d1 = SayHi('Dot', 4)
