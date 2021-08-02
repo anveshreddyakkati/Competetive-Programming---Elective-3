@@ -5,11 +5,24 @@
 # sayHi(d1) # Hi, my name is Dot and I am 4 years old!
 # sayHi(d2) # Hi, my name is Elf and I am 3 years old!
 
-class SayHi(Object):
-    def __init__(self,name,age):
-        self.name=name
-        self.age=age
-    def sayHi(self):
-        print("Hi, my name is ", self.name ,"and I am ",self.age,"years old!")
-p=SayHi("beware",24)
-p.sayHi()
+# class SayHi(Object):
+#     def __init__(self,name,age):
+#         self.name=str(input())
+#         self.age=int(input())
+#     def sayHi(self):
+#         print("Hi, my name is ", self.name ,"and I am ",self.age,"years old!")
+
+# print(SayHi(d1))
+
+
+
+class SayHi(object):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        print("Hi my name is",self.name,"and I am ",self.age,"years old!")
+ 
+
+d1 = SayHi('Dot', 4)
+d2 = SayHi('Elf', 3)
+
