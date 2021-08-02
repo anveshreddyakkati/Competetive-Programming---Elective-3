@@ -15,7 +15,18 @@
 # string "None"). So, for example:
 
 def topScorer(data):
+    k=[]
+    x=data.split("\n")
+    x=x[ :: 1]
+    for i in range (len(x)-1):
+        k.append(x[i][0])
+      
+
+   
+    print(k)
+  
     # Your code goes here...
+    
     return ""
 
 data = '''\
