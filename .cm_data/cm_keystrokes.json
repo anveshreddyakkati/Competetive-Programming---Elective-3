@@ -1861,6 +1861,48 @@
             "keyStrokeTimeStamp": "Mon Aug 02 2021 18:30:55",
             "keyStrokeInfo": "3",
             "position": "33,25"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 02 2021 18:32:10",
+            "keyStrokeInfo": "",
+            "position": "33,23"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 02 2021 18:32:11",
+            "keyStrokeInfo": "4",
+            "position": "33,23"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 02 2021 18:32:19",
+            "keyStrokeInfo": "",
+            "position": "33,23"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 02 2021 18:32:19",
+            "keyStrokeInfo": "1",
+            "position": "33,23"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 02 2021 18:32:30",
+            "keyStrokeInfo": "",
+            "position": "33,27"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 02 2021 18:32:30",
+            "keyStrokeInfo": "2",
+            "position": "33,27"
         }
     ]
 }

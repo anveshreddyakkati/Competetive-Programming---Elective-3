@@ -30,7 +30,7 @@ def isLatinSquare(lst):
 
     # if lst[i][j] in a:
     
-print(isLatinSquare([[1,3,3,4],[4,3,2,1],[2,1,4,3],[3,4,1,2]]))
+print(isLatinSquare([[1,3,2,4],[4,3,2,1],[2,1,4,3],[3,4,1,2]]))
 
 
 
