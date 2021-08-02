@@ -5,5 +5,15 @@
 # the nth number with Property309.
 
 def nthwithproperty309(n):
-	# Your code goes here
-	pass
+	n=(n**5)
+	for i in range (10):
+		if str(i) in str(n):
+			continue
+		elif(str(i) not in str(n)):
+			return False
+	return True
+
+count=0
+s=1
+while ( n != count):
+
