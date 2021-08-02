@@ -5802,6 +5802,13 @@
             "keyStrokeTimeStamp": "Mon Aug 02 2021 12:45:14",
             "keyStrokeInfo": "",
             "position": "44,7"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Mon Aug 02 2021 12:54:30",
+            "keyStrokeInfo": "\r\n      ",
+            "position": "41,7"
         }
     ]
 }

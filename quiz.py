@@ -39,6 +39,7 @@ def bestQuiz(l):
             results.append(d)
       x=max(results)
       
+      
       if x!=0:
           return results.index(x)
       return None
