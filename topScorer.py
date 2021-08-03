@@ -15,19 +15,50 @@
 # string "None"). So, for example:
 
 def topScorer(data):
+    
+    if (data==""):
+        return None
+    
     k=[]
+    l=[]
     x=data.split("\n")
-    x=x[ :: 1]
-    for i in range (len(x)-1):
-        k.append(x[i][0])
-      
+
 
    
-    print(k)
+    for i in range (len(x)-1):
+        k.append(x[i].split(","))
+    # print("k",k)
+    for i in range (len(k)):
+        # print(k[i][0])
+        l.append(k[i][0])
+        del k[i][0]
+    # print("l",l)
+    z=max(k[0])
+    # print(z)
+    y=max(k[1])
+    # print(y)
+    # print("l",l)
+    # b=str(l[0]+","+l[1])
+    # print("b",b)
+    if z>y:
+        # print(l[0])
+        return l[0]
+    elif y>z:
+        # print(l[0])
+        return l[1] 
+    else:
+        separator = ','
+        h=(str(separator.join(l)))
+        return h
+
+       
+    
+     
+
   
     # Your code goes here...
     
-    return ""
+    
 
 data = '''\
 Fred,10,20,30,40
