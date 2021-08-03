@@ -440,6 +440,20 @@
             "keyStrokeTimeStamp": "Tue Aug 03 2021 17:22:06",
             "keyStrokeInfo": ")",
             "position": "13,18"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 03 2021 18:59:11",
+            "keyStrokeInfo": "",
+            "position": "16,15"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 03 2021 18:59:12",
+            "keyStrokeInfo": " ",
+            "position": "16,15"
         }
     ]
 }
