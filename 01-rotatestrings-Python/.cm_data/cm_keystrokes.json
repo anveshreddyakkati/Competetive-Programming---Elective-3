@@ -1266,6 +1266,62 @@
             "keyStrokeTimeStamp": "Tue Jul 27 2021 20:17:45",
             "keyStrokeInfo": "#enters when nis outside the range of len(s)",
             "position": "22,2"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 03 2021 18:06:08",
+            "keyStrokeInfo": "",
+            "position": "13,8"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 03 2021 18:06:09",
+            "keyStrokeInfo": "%",
+            "position": "13,8"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Tue Aug 03 2021 18:13:34",
+            "keyStrokeInfo": "# ",
+            "position": "29,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 03 2021 18:13:36",
+            "keyStrokeInfo": "\r\n",
+            "position": "29,13"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 03 2021 18:13:36",
+            "keyStrokeInfo": "\r\n",
+            "position": "30,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 03 2021 18:13:36",
+            "keyStrokeInfo": "\r\n",
+            "position": "31,1"
+        },
+        {
+            "operation": "PASTE",
+            "lines": 11,
+            "keyStrokeTimeStamp": "Tue Aug 03 2021 18:13:37",
+            "keyStrokeInfo": "def fun_rotatestrings(s, n):\r\n    #enters when n>0\r\n\r\n    if n>0:\r\n        n = n%len(s)\r\n        s = s[n:] + s[:n]\r\n        return s\r\n    else:\r\n        n=abs(n)%len(s)\r\n        s = s[len(s)-n:]+s[:len(s)-n] \r\n        return s",
+            "position": "32,1"
+        },
+        {
+            "operation": "TYPED",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Tue Aug 03 2021 18:14:10",
+            "keyStrokeInfo": "=",
+            "position": "35,10"
         }
     ]
 }

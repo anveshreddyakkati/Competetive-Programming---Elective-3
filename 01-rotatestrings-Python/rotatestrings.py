@@ -6,24 +6,37 @@
 
 
 
-def fun_rotatestrings(s, n):
-	#enters when n>0
+# def fun_rotatestrings(s, n):
+# 	#enters when n>0
 
-	if n>0:
-		n = n-len(s)
-		s = s[n:] + s[:n]
-		return s
-	#when nis between 0 and -len(s)
+# 	if n>0:
+# 		n = n%len(s)
+# 		s = s[n:] + s[:n]
+# 		return s
+# 	#when nis between 0 and -len(s)
 
 	
-	elif(n<0 and abs(n)<=len(s)):
-		s = s[len(s)+n:] + s[:len(s)+n]
-		return s
-	#enters when nis outside the range of len(s)	
+# 	elif(n<0 and abs(n)<=len(s)):
+# 		s = s[len(s)+n:] + s[:len(s)+n]
+# 		return s
+# 	#enters when nis outside the range of len(s)	
 		
-	else:
+# 	else:
 		
 
-		n = n+len(s)
-		s = s[len(s)+n:] + s[:len(s)+n]
-		return s
+# 		n = n+len(s)
+# 		s = s[len(s)+n:] + s[:len(s)+n]
+# 		return s
+
+
+def fun_rotatestrings(s, n):
+    #enters when n>0
+
+    if n>=0:
+        n = n%len(s)
+        s = s[n:] + s[:n]
+        return s
+    else:
+        n=abs(n)%len(s)
+        s = s[len(s)-n:]+s[:len(s)-n] 
+        return s
