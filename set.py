@@ -8,5 +8,9 @@
 # [ {}, {1}, {2}, {3}, {4}, {5}, {1, 2} ]
 
 def limitedPowerSet(n, k):
-    # Your code goes here...
-    pass
+    x=[]
+    for i in range (k):
+        
+
+        return 
+    
