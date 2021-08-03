@@ -9,6 +9,30 @@
 # Note: the autograder will grade each of the following functions, so they are required. 
 # However, they also are here specifically because they are just the right helper 
 # functions to make nthHappyNumber(n) easier to write!
+import sympy 
 def ishappyprimenumber(n):
     # Your code goes here
-    pass
+    if (isprime(n)==True):
+   
+
+
+
+
+
+
+        
+        reminder = 0
+        total = 0
+        # taking the last digit
+        while(n>0):
+            reminder = n%10
+            total = total +(reminder*reminder)
+            n = n//10
+        
+        if(total==1):
+            return True
+        #when total >9 checking again whether it will total to 1 or not
+        elif(total>9):
+            return ishappyprimenumber(total)	
+        else:
+            return False
