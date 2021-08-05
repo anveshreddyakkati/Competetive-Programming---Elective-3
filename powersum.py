@@ -11,6 +11,9 @@
 # return 0.
 
 def powerSum(n, k):
+    if n<0 and k<0:
+        return 0
+    
     # Your code goes here...
     return 0
 
