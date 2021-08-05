@@ -8,15 +8,17 @@
 
 
 
+from math import factorial
 def fun_pascaltrianglevalue(row, col):
-	if (row>=col):
-		r=[]
-		for i in range (1,row+1):
-			t=[]
-			for i in range (1,i+1):
-				t.append(i)
-			r.append(t)
+    if (row>=col):
+        r=[]
+        for i in range(row+1):
+            l=[]
+ 
+            for j in range(i+1):
+                l.append(factorial(i)//(factorial(j)*factorial(i-j)))
+            r.append(l)
 
-		return (r[row-1][col-1])
-	else:
-		return 0
+        return (r[row][col])
+    else:
+        return 0
